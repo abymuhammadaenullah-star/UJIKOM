@@ -1,6 +1,43 @@
-# Backend Data Siswa
+# Aplikasi Data Siswa
 
-REST API untuk mengelola data siswa menggunakan Express.js dan MySQL. Database `db_siswa` dan tabel `siswa` dibuat otomatis saat backend pertama kali dijalankan.
+Aplikasi pengelolaan data siswa dalam satu repository GitHub. Backend REST API menggunakan Express.js dan MySQL, sedangkan frontend menggunakan React dan Vite.
+
+## Struktur repository
+
+```text
+backend/   REST API Express.js dan MySQL
+frontend/  Antarmuka React dan Vite
+```
+
+## Menjalankan aplikasi
+
+Persiapkan Node.js 18+, npm, dan MySQL Server. Instal dependency serta jalankan backend dan frontend di dua terminal:
+
+**Terminal 1 — backend**
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+**Terminal 2 — frontend**
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend tersedia di <http://localhost:5173> dan API di <http://localhost:5000>. Backend harus berjalan agar frontend dapat membaca dan menyimpan data.
+
+## Frontend
+
+Frontend menggunakan React dan Vite. Permintaan `/api` dari Vite diteruskan ke backend di `http://localhost:5000`.
+
+## Backend
+
+REST API mengelola data siswa menggunakan Express.js dan MySQL. Database `db_siswa` dan tabel `siswa` dibuat otomatis saat backend pertama kali dijalankan.
 
 ## Teknologi
 
